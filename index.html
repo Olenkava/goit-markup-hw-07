@@ -64,16 +64,9 @@
             class="burger-icon"
             width="32"
             height="22"
-            fill="currentColor"
-            viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
-            <use href="./images/icons.svg#icon-burger-menu"></use>
           >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
+            <use href="./images/icons.svg#icon-burger-menu"></use>
           </svg>
         </button>
       </div>
@@ -149,12 +142,15 @@
       <!--What Are We Doing?-->
 
       <section class="skills">
-         <div class="container">
+        <div class="container">
           <h2 class="skills-title">What are we doing</h2>
           <ul class="skills-list list">
             <li class="skills-item">
               <img
-              srcset="./images/img-task1_desk@1x.jpg 1x, ./images/img-task1_desk@2x.jpg 2x"
+                srcset="
+                  ./images/img-task1_desk@1x.jpg 1x,
+                  ./images/img-task1_desk@2x.jpg 2x
+                "
                 src="./images/img-task1_desk@1x.jpg"
                 alt="Desktop App"
                 width="360"
@@ -163,7 +159,10 @@
             </li>
             <li class="skills-item">
               <img
-                srcset="./images/img-task2_desk@1x.jpg 1x, ./images/img-task2_desk@2x.jpg 2x"
+                srcset="
+                  ./images/img-task2_desk@1x.jpg 1x,
+                  ./images/img-task2_desk@2x.jpg 2x
+                "
                 src="./images/img-task2_desk@1x.jpg"
                 alt="Mobile App"
                 width="360"
@@ -172,7 +171,10 @@
             </li>
             <li class="skills-item">
               <img
-                srcset="./images/img-task3_desk@1x.jpg 1x, ./images/img-task3_desk@2x.jpg 2x"
+                srcset="
+                  ./images/img-task3_desk@1x.jpg 1x,
+                  ./images/img-task3_desk@2x.jpg 2x
+                "
                 src="./images/img-task3_desk@1x.jpg"
                 alt="Responsive Design"
                 width="360"
@@ -191,7 +193,10 @@
           <ul class="team-list list">
             <li class="team-list-item">
               <img
-                srcset="./images/img-team1@1x.jpg 1x, ./images/img-team1@2x.jpg 2x"
+                srcset="
+                  ./images/img-team1@1x.jpg 1x,
+                  ./images/img-team1@2x.jpg 2x
+                "
                 src="./images/img-team1@1x.jpg"
                 alt="Our Product Designer"
                 width="264"
@@ -233,7 +238,10 @@
             </li>
             <li class="team-list-item">
               <img
-              srcset="./images/img-team2@1x.jpg 1x, ./images/img-team2@2x.jpg 2x"
+                srcset="
+                  ./images/img-team2@1x.jpg 1x,
+                  ./images/img-team2@2x.jpg 2x
+                "
                 src="./images/img-team2@1x.jpg"
                 alt="Our Frontend Developer"
                 width="264"
@@ -275,7 +283,10 @@
             </li>
             <li class="team-list-item">
               <img
-              srcset="./images/img-team3@1x.jpg 1x, ./images/img-team3@2x.jpg 2x"
+                srcset="
+                  ./images/img-team3@1x.jpg 1x,
+                  ./images/img-team3@2x.jpg 2x
+                "
                 src="./images/img-team3@1x.jpg"
                 alt="Our Marketing Specialist"
                 width="264"
@@ -317,7 +328,10 @@
             </li>
             <li class="team-list-item">
               <img
-              srcset="./images/img-team4@1x.jpg 1x, ./images/img-team4@2x.jpg 2x"
+                srcset="
+                  ./images/img-team4@1x.jpg 1x,
+                  ./images/img-team4@2x.jpg 2x
+                "
                 src="./images/img-team4@1x.jpg"
                 alt="Our UI Designer"
                 width="264"
@@ -577,55 +591,60 @@
 
     <div class="menu-container js-menu-container" id="mobile-menu">
       <!-- <button class="menu-toggle js-close-menu"> -->
-       <button type="button" class="close-button js-close-menu" data-modal-close>
-          <svg width="8" height="8" class="close-button-icon">
-            <use href="./images/icons.svg#icon-vector"></use>
-          </svg>
-
+      <button type="button" class="close-button js-close-menu" data-modal-close>
+        <svg width="8" height="8" class="close-button-icon">
+          <use href="./images/icons.svg#icon-vector"></use>
+        </svg>
       </button>
-<!-- Mobile Menu -->
+      <!-- Mobile Menu -->
       <ul class="mobile-menu list">
-        <li><a href="#" class="link active">About</a></li>
-        <li><a href="./portfolio.html" class="link">Portfolio</a></li>
-        <li><a href="#" class="link">Contacts</a></li>
+        <li class="mobile-menu-item">
+          <a href="#" class="link active">About</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./portfolio.html" class="link">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item"><a href="#" class="link">Contacts</a></li>
       </ul>
       <ul class="mobile-contacts list">
-         <li> <a class="tel-contacts-link link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              ></li>
-        <li><a
-                class="mail-contacts-link link"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              ></li>
+        <li>
+          <a class="tel-contacts-link link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a class="mail-contacts-link link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
       </ul>
 
       <ul class="mobile-socials-list list">
-            <li class="soc-media-item">
-              <a class="soc-media-link link" href="#"
-                ><svg width="24" height="24" class="soc-media-icon">
-                  <use href="./images/icons.svg#icon-instagram"></use></svg
-              ></a>
-            </li>
-            <li class="soc-media-item">
-              <a class="soc-media-link link" href="#">
-                <svg width="24" height="24" class="soc-media-icon">
-                  <use href="./images/icons.svg#icon-twitter"></use></svg
-              ></a>
-            </li>
-            <li class="soc-media-item">
-              <a class="soc-media-link link" href="#">
-                <svg width="24" height="24" class="soc-media-icon">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li class="soc-media-item">
-              <a class="soc-media-link link" href="#">
-                <svg width="24" height="24" class="soc-media-icon">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
+        <li class="soc-media-item">
+          <a class="soc-media-link link" href="#"
+            ><svg width="24" height="24" class="soc-media-icon">
+              <use href="./images/icons.svg#icon-instagram"></use></svg
+          ></a>
+        </li>
+        <li class="soc-media-item">
+          <a class="soc-media-link link" href="#">
+            <svg width="24" height="24" class="soc-media-icon">
+              <use href="./images/icons.svg#icon-twitter"></use></svg
+          ></a>
+        </li>
+        <li class="soc-media-item">
+          <a class="soc-media-link link" href="#">
+            <svg width="24" height="24" class="soc-media-icon">
+              <use href="./images/icons.svg#icon-facebook"></use></svg
+          ></a>
+        </li>
+        <li class="soc-media-item">
+          <a class="soc-media-link link" href="#">
+            <svg width="24" height="24" class="soc-media-icon">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
       </ul>
     </div>
     <script src="./js/modal.js"></script>
